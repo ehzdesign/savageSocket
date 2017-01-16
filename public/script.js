@@ -20,7 +20,16 @@ socket.on('update count', function(rn){
   console.log(rn);
 });
 
+socket.on('update time', function(msg){
+  displayTimestamp(msg)}
+);
+
 //replace followers count value text with random number recieved from server
 function updateCountValue(rn){
   $('#count *:first-child').text(rn.toLocaleString());
 };
+
+//function display timestamp
+function displayTimestamp(msg){
+  $('#timestamp').text('last updated: ' + msg);
+}
