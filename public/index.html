@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" />
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+
+        <div id="count">
+          <p></p>
+          <p>followers</p>
+        </div>
+        <button id="update-btn">update</button>
+      <a href="http://www.21savage.com/" target="_blank">21savage.com</a>
+    </main>
+  </body>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script>
+  var socket = io();
+  </script>
+  <script src="script.js" charset="utf-8"></script>
+</html>
